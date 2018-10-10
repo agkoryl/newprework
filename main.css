@@ -1,0 +1,44 @@
+/***********************************************
+*
+* Author : me
+* Date : ble
+*
+************************************************/
+
+/* Style all p tags */
+p, dd {
+    font-size: 18px;
+    color: red;
+    
+} 
+
+
+#welcome {
+    font-size: 40px;
+    color: darkgreen;
+}
+/* Descendant selector */ 
+.novels dd {
+    font-size: 15px;
+    color: pink;
+}
+/*Style novels class */
+.novels__title {
+    color: blue;
+   }
+
+   /* Child selector*/
+   body > p {
+       color: gold;
+   }
+   /* Adjacent selector */
+    h2 + p {
+       color: greenyellow;
+   }
+   /* Class attribute selector */
+   dt[class] {
+       text-decoration: underline;
+   }
+a[href$="pdf"] {
+    color: purple;
+}
