@@ -11,8 +11,6 @@ p, dd {
     color: red;
     
 } 
-
-
 #welcome {
     font-size: 40px;
     color: darkgreen;
@@ -41,4 +39,41 @@ p, dd {
    }
 a[href$="pdf"] {
     color: purple;
+}
+/* Pseudo selectors */
+/* Dynamic */
+a:hover {
+color: pink;
+}
+a:active {
+    color:orange;
+}
+a:visited {
+    color:black;
+}
+/*Structural*/
+/* First child last child*/
+dl dt:first-child {
+    font-weight: bold;
+}
+dl dd:last-child {
+    font-weight:bold;
+    color: green;
+}
+/* Last of type first of type*/
+dl dt:last-of-type {
+    color: green;
+}
+.life dt:nth-child(1), dt:nth-child(3) {
+    color: red;
+    text-decoration: underline;
+}
+.novels__list *:nth-child(even) {
+    background: grey;
+}
+.novels__list *:nth-child(odd) {
+    background: yellow;
+}
+.life dt:nth-of-type(odd) {
+    background: gold;
 }
